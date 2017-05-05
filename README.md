@@ -73,7 +73,7 @@ So for example, you could create a copy of the script in "BNCB-Account1" and a s
 
 Then, following the example above, change the shell script in one used on the command line of CertBot to call the script from the appropriate directory for each domain.
 
-`
+```
 	case $domain in
 	example.com)
 		php /path/to/script/BNCB-Account1/BraveNet-CertBot.php $domain
@@ -83,4 +83,4 @@ Then, following the example above, change the shell script in one used on the co
 		php /path/to/script/BNCB-Account2/BraveNet-CertBot.php $domain
 		;;
 	esac
-`
+```
