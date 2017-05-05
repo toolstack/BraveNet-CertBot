@@ -1,6 +1,6 @@
 # BraveNet Support for CertBot
 
-This script works with CertBot's `--renew-hook` option to automatically update BraveNet's certificate list with the new Let's Encrypt cert.
+This script works with CertBot's `--renew-hook` option to automatically update BraveNet.com's certificate list with the new Let's Encrypt cert.
 
 It accomplishes this by a scripted web session to the BraveNet administrative site.
 
@@ -42,13 +42,13 @@ Comment this out like so:
 
 Then uncomment the block of lines from line 15 to 19:
 
-`
+```
 	case $domain in
 	example.com)
 		php $BNCB $domain
 		;;
 	esac
-`
+```
 
 Change line 16, `example.com)`, to be whatever domain you want to update (make sure to include the closing bracket, it's not a typo).
 
